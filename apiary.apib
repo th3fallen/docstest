@@ -27,7 +27,45 @@ Listing accounts gives an object with two members: an account object, which spec
 
 + Parameters
 
-    + account_id: 1 (number, required) - ID of the account object to be retrieved.
+    + account_id: 1 (number, required) - ID of the account to be retrieved.
+
+
+
++ Request (application/json)
+
+    + Headers
+
+            W-Token: ilovemyboss
+
+
++ Response 200 (application/json)
+
+    + Attributes
+        + account (Account)
+### Create Account [POST /account/]
+
++ Parameters
+
+    + account_id: 1 (number, required) - ID of the account to be retrieved.
+
++ Attributes (Account)
+
++ Request (application/json)
+
+    + Headers
+
+            W-Token: ilovemyboss
+
+
++ Response 200 (application/json)
+
+    + Attributes
+        + account (Account)
+### Update Account [PUT /account/{account_id}]
+
++ Parameters
+
+    + account_id: 1 (number, required) - ID of the account to be retrieved.
 
 
 
@@ -47,7 +85,7 @@ Listing accounts gives an object with two members: an account object, which spec
 
 ## Account (object)
 
-+ id: 1 (number),
++ id: 1 (number, required),
 + master_id: 0 (number),
 + country_id: 233 (number),
 + agent_id: 2 (number),
@@ -58,7 +96,6 @@ Listing accounts gives an object with two members: an account object, which spec
 + enabled: true (boolean),
 + custom_domain: ''(string),
 + plan_id: `-1` (number),
-+ plan_expires: `Tue, 21 Mar 2017 14:08:28 -0500` (number),
 - features (array)
     - all
 + wb_expires: false (boolean),
