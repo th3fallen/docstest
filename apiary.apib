@@ -1,0 +1,90 @@
+FORMAT: 1A
+HOST: https://api.wheniwork.com/2/
+
+# WhenIWork
+
+The When I Work API is thorough, flexible, and restful. Its methods are logically grouped and follow standard conventions. Make a selection from the left to jump to the method group you would like to know more about.
+
+Feel free to contact us if something seems out of place.
+
+## Accounts [/accounts]
+
+### Listing Accounts [GET]
+ 
++ Request
+    + Headers
+     
+            W-Token: ilovemyboss
+
+
++ Response 200 (application/json)
+
+        {
+          "accounts": [
+          {
+            "id": 11,
+            "master_id": 11,
+            "type": 3,
+            "logo": "https://s3.amazonaws.com/files.wheniwork.com/logos/16434.gif",
+            "company": "123 Company",
+            "subdomain": "123-company",
+            "enabled": true,
+            "bad_credit_card": false,
+            "plan_expires": "Sun, 14 Feb 2016 00:00:00 -0600",
+            "features": "[\"all\",\"locations\",\"sites\", ...]",
+            "timezone_id": "11",
+            "timezone_name": "America/Chicago",
+            "settings": "...",
+            "place": null
+          },
+          {
+              "id": 12,
+              "master_id": 11,
+              "type": 3,
+              "logo": "https://s3.amazonaws.com/files.wheniwork.com/logos/19282.gif",
+              "company": "ABC Company",
+              "subdomain": "ABC Company",
+              "enabled": true,
+              "bad_credit_card": false,
+              "plan_expires": "Sun, 14 Feb 2016 00:00:00 -0600",
+              "features": "[\"all\",\"locations\",\"sites\", ...]",
+              "timezone_id": "11",
+              "timezone_name": "America/Chicago",
+              "settings": "...",
+              "place": null
+            }
+          ]
+
+### Get Existing Account [GET /accounts/{account_id}]
++ Parameters
+    + account_id (number) - ID of the account object to be retrieved.
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+    + Parameter
+            "account_id": 11
+        
++ Response 200 (application/json)
+
+        {
+              "account": {
+                "id": 11,
+                "master_id": 11,
+                "type": 3,
+                "logo": "https://s3.amazonaws.com/files.wheniwork.com/logos/16434.gif",
+                "company": "123 Company",
+                "subdomain": "123-company",
+                "enabled": true,
+                "bad_credit_card": false,
+                "plan_expires": "Sun, 14 Feb 2016 00:00:00 -0600",
+                "features": "[\"all\",\"locations\",\"sites\", ...]",
+                "timezone_id": "11",
+                "timezone_name": "America/Chicago",
+                "settings": "...",
+                "place": null
+              }
+        }
