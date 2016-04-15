@@ -29,7 +29,7 @@ Listing accounts gives an object with two members: an account object, which spec
 
 + Parameters
 
-    + account_id: 1 (number, required) - ID of the account to be retrieved.
+    + account_id: 10000 (number, required) - ID of the account to be retrieved.
 
 + Attributes (Account)
 
@@ -63,7 +63,7 @@ Listing accounts gives an object with two members: an account object, which spec
 
 + Parameters
 
-    + account_id: 1 (number, required) - ID of the account to be retrieved.
+    + account_id: 10000 (number, required) - ID of the account to be retrieved.
 
 + Attributes (Account)
 
@@ -83,14 +83,14 @@ Listing accounts gives an object with two members: an account object, which spec
 
 ## Account (object)
 
-+ id: 1 (number, required),
++ id: 10000 (number, required),
 + master_id: 0 (number),
 + country_id: 233 (number),
 + agent_id: 2 (number),
 + type: 3 (number),
 + logo: ''(string),
-+ company: Publix Super Market at Cross Creek (string),
-+ subdomain: wiw (string),
++ company: ABC Company (string),
++ subdomain: abc-company (string),
 + enabled: true (boolean),
 + custom_domain: ''(string),
 + plan_id: `-1` (number),
@@ -243,3 +243,31 @@ Listing accounts gives an object with two members: an account object, which spec
     - establishment
 - place_id: `ChIJjR6Sn8qDVogRKdKpdu-cykM`,
 - updated_at: `Wed, 13 Apr 2016 17:01:59 -0500`
+## User (object)
+
++ id: 4364,
++ account_id: 10000,
++ role: 2,
++ email: goldiewilson@hillvalleycalifornia.gov,
++ first_name: Goldie,
++ last_name: Wilson,
++ phone_number: `555-555-5555`,
++ employee_code: 1020,
++ activated: true,
++ notes: ,
++ hours_preferred: 40,
++ hours_max: 40,
++ hourly_rate: 15.5,
++ type: 1,
++ last_login: `Mon, 05 Oct 2015 18:26:44 -0500`,
++ positions (array)
+    - 12284,
+    - 9554
++ locations (array)
+    - 34,
+    - 58934
++ is_deleted: false,
++ is_hidden: false,
++ is_payroll: false,
++ is_private: false,
++ is_trusted: false

@@ -1,10 +1,8 @@
-### Get Existing Account [GET /account/{account_id}]
+### Claim Account [POST /account/{account_id}/claim]
 
 + Parameters
 
     + account_id: 1 (number, required) - ID of the account to be retrieved.
-
-+ Attributes (Account)
 
 + Request (application/json)
 
@@ -12,8 +10,13 @@
 
             W-Token: ilovemyboss
 
+{
+    "industry_id": 15,
+    "ref_employees": 5-10
+}
 
 + Response 200 (application/json)
 
     + Attributes
         + account (Account)
+        + user (User)
