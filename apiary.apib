@@ -1,3 +1,6 @@
+FORMAT: 1A
+HOST: https://api.wheniwork.com/2/
+
 # WhenIWork
 
 The When I Work API is thorough, flexible, and restful. Its methods are logically grouped and follow standard conventions. Make a selection from the left to jump to the method group you would like to know more about.
@@ -90,10 +93,12 @@ Listing accounts gives an object with two members: an account object, which spec
 
             W-Token: ilovemyboss
 
-{
-    "industry_id": 15,
-    "ref_employees": 5-10
-}
+    + Body
+
+            {
+                "industry_id": 15,
+                "ref_employees": 5-10
+            }
 
 + Response 200 (application/json)
 
