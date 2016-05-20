@@ -11,5 +11,5 @@ src/endpoints/users/find.apib
 src/endpoints/users/create.apib
 src/endpoints/users/update.apib
 
-# Data Structures
+
 src/objects.apib
