@@ -1,0 +1,15 @@
+
+src/endpoints/account/list.apib
+src/endpoints/account/find.apib
+src/endpoints/account/create.apib
+src/endpoints/account/update.apib
+src/endpoints/account/claim.apib
+
+
+src/endpoints/users/list.apib
+src/endpoints/users/find.apib
+src/endpoints/users/create.apib
+src/endpoints/users/update.apib
+
+# Data Structures
+objects.apib

@@ -1,4 +1,4 @@
-### Create User [POST /users]
+### Update User Avatar [POST /users/avatar/{user_id}]
 
 + Parameters
 
@@ -12,9 +12,10 @@
 
             W-Token: ilovemyboss
 
-    + Attributes (User)
+    + Body (binary)
+
+            {
+                "file": avatar.jpg
+            }
 
 + Response 200 (application/json)
-
-    + Attributes
-        + user (User)
