@@ -12,4 +12,4 @@ src/endpoints/users/create.apib
 src/endpoints/users/update.apib
 
 # Data Structures
-objects.apib
+src/objects.apib
